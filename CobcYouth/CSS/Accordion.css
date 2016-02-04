@@ -1,0 +1,55 @@
+﻿.AccordionHeader
+{
+    text-align: center;
+    color: white;
+    padding: .3em;
+    border: 0px solid #0D243B;
+    background: #1B4E80;
+    background:linear-gradient(#61769A, #1B4E80);
+    text-align: center;
+    border-width: 0.5px 0.5px 0.5px 0.5px;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    
+}
+.AccordionHeader:hover
+{
+    background-color: #0B0B3B;
+    cursor:pointer;
+}
+
+.AccordionHeaderSelected
+{
+    text-align: center;
+    color: white;
+    padding: .3em;
+    background: #003366;
+    background:linear-gradient(#425D8B, #081937);
+    border: 0px solid #0D243B;
+    text-align: center;
+    border-width: 0.5px 0.5px 0.5px 0.5px;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.AccordionHeaderSelected:hover
+{
+    background-color: #0B0B3B;
+    cursor:pointer;
+}
+
+
+.AccordionContent
+{
+    background: #D6DCE7;
+    border-collapse: collapse;
+    border: 0px solid #0D243B;
+    font-size: 14px;
+    border-width: 0.5px 0.5px 0.5px 0.5px;
+}
+
+

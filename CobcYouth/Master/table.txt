@@ -1,0 +1,65 @@
+  <table class="BlueGrayHtmlTable">
+        <tr>
+            <td colspan="4">????</td>
+        </tr>
+        <tr>
+            <td style="width: 50px">
+                <asp:Label ID="Label1" runat="server" Text="ID"></asp:Label></td>
+            <td colspan="3">
+                <asp:Label ID="MemberID" runat="server" Text=""></asp:Label></td>
+
+        </tr>
+        <tr>
+            <td style="width: 50px">
+                <asp:Label ID="Label2" runat="server" Text="??"></asp:Label></td>
+            <td style="width: 120px">
+                <asp:Label ID="MemberName" runat="server" Text=""></asp:Label></td>
+            <td style="width: 50px">
+                <asp:Label ID="Label3" runat="server" Text="??"></asp:Label></td>
+            <td style="width: 120px">
+                <asp:Label ID="NickName" runat="server" Text=""></asp:Label></td>
+
+        </tr>
+        <tr>
+            <td style="width: 50px">
+                <asp:Label ID="Label4" runat="server" Text="??"></asp:Label></td>
+            <td style="width: 120px">
+                <asp:Label ID="Gender" runat="server" Text=""></asp:Label></td>
+            <td style="width: 50px">
+                <asp:Label ID="Label5" runat="server" Text="??"></asp:Label></td>
+            <td style="width: 120px">
+                <asp:Label ID="Fellowship" runat="server" Text=""></asp:Label></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="background-color: #003366; text-align: center; font-size: 16px; font-family: Arial; font-weight: bold; color: #ffffff;">????</td>
+        </tr>
+
+        <tr>
+            <td style="width: 50px">
+                <asp:Label ID="Label6" runat="server" Text="Email"></asp:Label></td>
+            <td colspan="3">
+                <asp:Label ID="Email" runat="server" Text=""></asp:Label></td>
+        </tr>
+
+        <tr>
+            <td style="width: 50px">
+                <asp:Label ID="Label8" runat="server" Text="Facebook"></asp:Label></td>
+            <td colspan="3">
+                <asp:Label ID="Facebook" runat="server" Text=""></asp:Label></td>
+        </tr>
+
+        <tr>
+            <td style="width: 50px">
+                <asp:Label ID="Label10" runat="server" Text="Tel"></asp:Label></td>
+            <td colspan="3">
+                <asp:Label ID="Tel" runat="server" Text=""></asp:Label></td>
+        </tr>
+
+        <tr>
+            <td style="width: 50px">
+                <asp:Label ID="Label12" runat="server" Text="Mobile"></asp:Label></td>
+            <td colspan="3">
+                <asp:Label ID="Mobile" runat="server" Text=""></asp:Label></td>
+        </tr>
+
+    </table>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+  <siteMapNode title="Home" >
+
+    <siteMapNode title="首頁" url="~/Default.aspx" description="首頁">
+    </siteMapNode>
+
+    <siteMapNode title="青少年部資料" description="青少年部資料">
+      <siteMapNode url="~/Master/Member.aspx" title="團友資料"  description="團友資料">
+      </siteMapNode>
+      <siteMapNode url="~/Master/Fellowship.aspx" title="團契資料"  description="參加者資料">
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="靈命成長計劃"  description="靈命成長計劃">
+      <siteMapNode url="~/SpiritGrow/SpiritGrowPlan.aspx" title="參加者計劃"  description="參加者資料">
+      </siteMapNode>
+      <siteMapNode url="~/SpiritGrow/SpiritGrowProgress.aspx" title="參加者進度"  description="參加者進度">
+      </siteMapNode>
+      <siteMapNode url="~/SpiritGrow/SpirirGrowSendEmail.aspx" title="發送郵件"  description="發送郵件">
+      </siteMapNode>
+    </siteMapNode>
+
+    
+  </siteMapNode>
+</siteMap>
