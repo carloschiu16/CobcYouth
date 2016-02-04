@@ -12,6 +12,7 @@ namespace CobcYouth
         protected void Page_Load(object sender, EventArgs e)
         {
             CheckLogin();
+
             if (!IsPostBack)
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "JsFunc", "Setsize()", true);
