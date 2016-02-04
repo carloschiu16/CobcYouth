@@ -11,8 +11,6 @@ namespace CommonUtilities
     {
         private static readonly RandomNumberGenerator Random = RandomNumberGenerator.Create();
 
-
-
         private static readonly byte[] cryptKey = Encoding.ASCII.GetBytes("c0dr02jrjpxd7ifwepfsdmclndknknfn");
         private static readonly byte[] authKey = Encoding.ASCII.GetBytes("328ufvn0cnd030cnfn2oxd203xf02rcv");
 
