@@ -25,15 +25,15 @@ namespace CobcYouth
         {
             string UserName = LoginUser.UserName;
             string InputPassword = LoginUser.Password;
-            DataTable dt = CobcYouthDAL.GetUserLogin(UserName, InputPassword);
-          
-            if (dt.Rows.Count > 0)
+            User user = CobcYouthDAL.GetUserLogin(UserName, InputPassword);
+
+            if (user != null)
             {
                 e.Authenticated = true;
-                Session["UserID"] = (int)dt.Rows[0]["UserID"];
-                Session["UserName"] = dt.Rows[0]["UserName"].ToString();
-                Session["UserGroup"] = (int)dt.Rows[0]["UserGroup"]; ;
-                Session["LoginTime"] = System.DateTime.Now;
+                Session["UserID"] = user.UserID;
+                Session["UserName"] = user.UserName;
+                Session["UserGroup"] = user.UserGroup;
+                Session["LoginTime"] = user.LoginTime;
                 Response.Redirect("~/Default.aspx");
             }
         }

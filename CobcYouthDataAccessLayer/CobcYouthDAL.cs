@@ -9,17 +9,30 @@ namespace CobcYouthDataAccessLayer
 {
     public class CobcYouthDAL
     {
-        public static DataTable GetUserLogin(string UserName, string InputPassword)
+        public static User GetUserLogin(string UserName, string InputPassword)
         {
-            string commandText = string.Format("select * from user where UserName = @UserName and Password = @InputPassword ");
+            string commandText = string.Format("select * from user where UserName = @UserName;");
             DataBaseHandler dbHandler = new DataBaseHandler();
             MySqlCommand command = new MySqlCommand(commandText, dbHandler.conn);
             command.Parameters.AddWithValue("@UserName", UserName);
-            command.Parameters.AddWithValue("@InputPassword", InputPassword);
+            //command.Parameters.AddWithValue("@InputPassword", InputPassword);
             command.CommandText = commandText;
 
             DataTable dt = dbHandler.SQLExecDataTable(dbHandler.conn, command);
-            return dt;
+
+            if (dt.Rows.Count > 0)
+            {
+                if (InputPassword == Encryption.Decrypt(dt.Rows[0]["Password"].ToString()))
+                {
+                    User user = new User();
+                    user.UserID = (int)dt.Rows[0]["UserID"];
+                    user.UserName = dt.Rows[0]["UserName"].ToString();
+                    user.UserGroup = (int)dt.Rows[0]["UserGroup"];
+                    user.LoginTime = System.DateTime.Now;
+                    return user;
+                }
+            }
+            return null;
         }
 
         public static DataTable GetSpiritGrowPlan(int fellowshipID)
